@@ -118,7 +118,7 @@ export default function TalkPage() {
     if (hostname.includes('trycloudflare.com')) {
       // De WebSocket heeft zijn eigen tunnel URL
       // Vervang dit met de juiste URL wanneer de tunnel verandert
-      return "https://chuck-grab-lighter-korean.trycloudflare.com";
+      return "https://regularly-pavilion-cattle-office.trycloudflare.com";
     }
 
     // Lokale ontwikkeling

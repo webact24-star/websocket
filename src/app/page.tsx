@@ -53,7 +53,7 @@ export default function Dashboard() {
     // Als we op trycloudflare.com zitten, gebruik de juiste WebSocket tunnel URL
     if (hostname.includes('trycloudflare.com')) {
       // De WebSocket heeft zijn eigen tunnel URL
-      return "https://chuck-grab-lighter-korean.trycloudflare.com";
+      return "https://regularly-pavilion-cattle-office.trycloudflare.com";
     }
 
     // Lokale ontwikkeling
