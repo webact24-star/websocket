@@ -135,7 +135,8 @@ export default function Dashboard() {
       reconnectionAttempts: 3,
       reconnectionDelay: 2000,
       timeout: 10000,
-      transports: ["websocket", "polling"],
+      // Gebruik alleen polling voor Cloudflare tunnels (websocket upgrade werkt niet altijd)
+      transports: ["polling"],
     });
 
     newSocket.on("connect", () => {

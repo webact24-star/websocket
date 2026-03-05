@@ -257,7 +257,8 @@ export default function TalkPage() {
       reconnectionAttempts: 5,
       reconnectionDelay: 2000,
       timeout: 20000,
-      transports: ["websocket", "polling"],
+      // Gebruik alleen polling voor Cloudflare tunnels (websocket upgrade werkt niet altijd)
+      transports: ["polling"],
     });
 
     socketRef.current = socket;
